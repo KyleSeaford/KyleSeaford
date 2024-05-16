@@ -1,0 +1,14 @@
+2024-01-25 18:16:16,281 - ERROR - Script running at 2024-01-25 18:16:16.280601
+NoneType: None
+2024-01-25 18:16:16,283 - ERROR - The screen size is: Size(width=1920, height=1080)
+NoneType: None
+2024-01-25 18:16:16,283 - WARNING - SCRIPT STARTED
+2024-01-25 18:16:20,625 - INFO - Github opened
+2024-01-25 18:16:21,967 - INFO - clicked blank space
+2024-01-25 18:16:24,148 - INFO - Updated github repository
+2024-01-25 18:16:25,458 - INFO - clicked 'commit changes'
+2024-01-25 18:16:26,745 - INFO - clicked in the message box
+2024-01-25 18:16:27,541 - INFO - typed the commit message
+2024-01-25 18:16:30,851 - INFO - clicked 'commit changes'
+2024-01-25 18:16:32,150 - INFO - clicked 'KyleSeaford' in top left
+2024-01-25 18:16:32,152 - WARNING - SCRIPT ENDED

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Websites - Kyle Seaford</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        nav a.active {
+            background-color: #575757;
+        }
+        section {
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        .websites ul {
+            list-style: none;
+            padding: 0;
+        }
+        .websites li {
+            background: #e2e2e2;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .websites button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 2px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            float: right; /* Add this line */
+            margin-top: 5px;;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.4);
+            padding-top: 60px;
+        }
+        .modal-content {
+            margin: 5% auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+        }
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #4CAF50;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Kyle Seaford</h1>
+        <p>Mountain Biking, Coding, and Digital Production Design Student</p>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="websites.html" class="active">Websites</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact Me</a>
+    </nav>
+
+    <section class="websites container">
+        <h2>Websites - Newest to Oldest</h2>
+        <ul>
+            <li>
+                <strong>personal website V2 (the page you are on now):</strong> This website is a display of my skills and projects. It is a responsive website that adapts to different screen sizes. The website is built using HTML, CSS, and JavaScript.
+            </li>
+
+            <li>
+                <strong>DigiStore:</strong> As a small team we are developing a website for a fictional online store using HTML, CSS, Python and JavaScript. Learn more by visiting our <a href="https://github.com/Ecommerce-Tlevel">GitHub</a> (Unfortunately it's currently private).
+                <button onclick="openModal('modal1')">View Homepage</button>
+    
+                <div id="modal1" class="modal">
+                    <span class="close" onclick="closeModal('modal1')">&times;</span>
+                    <img class="modal-content" src="websites/ds.PNG" alt="Website Homepage">
+                </div>
+            </li>
+            <li>
+                <strong>Personal Website V1:</strong> With the desire to showcase my skills and accomplishments, I transformed my traditional CV into a dynamic and interactive online platform. The website served as a digital representation of my professional journey.
+                By adapting my CV into a web format, I aimed to provide visitors with a more engaging and informative experience. I didn't really like the styles and layout of this website so I decided to create a new one (the one you are currently on).
+                <button onclick="openModal('modal2')">View Homepage</button>
+    
+                <div id="modal2" class="modal">
+                    <span class="close" onclick="closeModal('modal2')">&times;</span>
+                    <img class="modal-content" src="websites/cv.PNG" alt="Website Homepage">
+                </div>
+            <li>
+                <strong>Pub / Restaurant Website:</strong> I started developing a website for a local pub; however, after sharing my idea with them, they unfortunately were uninterested. The website was intended to be simple, featuring a menu, gallery, history, and contact page. I never fully finished this site due to other projects and work commitments, but it helped me further understand HTML and CSS.
+                <button onclick="openModal('modal3')">View Homepage</button>
+
+                <div id="modal3" class="modal">
+                    <span class="close" onclick="closeModal('modal3')">&times;</span>
+                    <img class="modal-content" id="modalImage" src="websites/swan.PNG" alt="Website Homepage">
+                </div>
+            </li>
+            <li>
+                <strong>Southern San Andreas Super Autos from GTA5:</strong> My second venture into web development led to a visually pleasing creation, though it never made it to the public domain. This project was a recreation of the Southern San Andreas Super Autos website from GTA 5. Unlike its predecessor, this endeavor was a fusion of fun and learning. The recreation process involved delving into the intricacies of design, aiming to capture the essence of the in-game website. Every detail, from the layout to the visual elements, was meticulously crafted to mirror the GTA 5 experience. As a result, the project became a canvas for honing my skills in HTML, CSS, and design principles. While the website may not have seen the light of day, the journey of replicating a virtual platform into a tangible web design proved to be an engaging and enlightening experience. This endeavor, with its visual appeal and educational value, contributed significantly to my growth.
+                <button onclick="openModal('modal4')">View Homepage</button>
+
+                <div id="modal4" class="modal">
+                    <span class="close" onclick="closeModal('modal4')">&times;</span>
+                    <img class="modal-content" id="modalImage" src="websites/ssa.PNG" alt="Website Homepage">
+                </div>
+            </li>
+            <li>
+                <strong>Dragon Fruit Games:</strong> Conceived in September 2023, marked my foray into web development. While the website never saw the light of day, its creation served as my initial exposure to HTML. Admittedly, the design was far from perfect, chaotic layouts and amateurish aesthetics prevailed. Yet, every flaw illuminated a path of improvement. What may have appeared as a subpar design became a canvas for learning. Each coding misstep transformed into a stepping stone for growth. The "shocking" appearance was, in essence, a testament to my evolving skills. In retrospect, "Dragon Fruit Games" was more than a dormant project; it was a journey from coding novice to a more seasoned developer. The site, with all its imperfections, kindled my enduring passion for web development.
+                <button onclick="openModal('modal5')">View Homepage</button>
+
+                <div id="modal5" class="modal">
+                    <span class="close" onclick="closeModal('modal5')">&times;</span>
+                    <img class="modal-content" id="modalImage" src="websites/games.PNG" alt="Website Homepage">
+                </div>
+            </li>
+            <li>
+                <strong>Draw with Kyle:</strong> In 2012, I took on the challenge of creating my very first website, and I had some fantastic guidance from my dad along the way. This project marked my foray into the world of WordPress. The main goal? To showcase my love for drawing, a passion that was gaining momentum at the time. But the website wasn't just about art; it also became a space where I shared reviews of local parks and highlighted various projects I was working on. Looking back, that website captures a snapshot of my creative journey and interests during that period. It's a testament to those early days of exploring the online world and finding a way to express myself. Visit <a href="http://draw.kyle-seaford.co.uk/" target="_blank">Draw With Kyle</a>.
+                <button onclick="openModal('modal6')">View Homepage</button>
+
+                <div id="modal6" class="modal">
+                    <span class="close" onclick="closeModal('modal6')">&times;</span>
+                    <img class="modal-content" id="modalImage" src="websites/draw.PNG" alt="Website Homepage">
+                </div>
+            </li>
+        </ul>
+    </section>
+    
+    <script>
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = "block";
+        }
+    
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = "none";
+        }
+    </script>
+
+    <br><footer>
+        &copy; 2024 Kyle Seaford
+    </footer>
+
+</body>
+</html>
