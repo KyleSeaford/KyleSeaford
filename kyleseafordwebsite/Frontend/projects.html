@@ -7,7 +7,7 @@
     <link rel="icon" type="image/x-icon" href="logo.png">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f9;
@@ -53,6 +53,50 @@
             padding: 10px;
             border-radius: 5px;
         }
+        .projects button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 2px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            float: right; /* Add this line */
+            margin-top: 5px;;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.4);
+            padding-top: 60px;
+        }
+        .modal-content {
+            margin: 5% auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+        }
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
         footer {
             text-align: center;
             padding: 10px 0;
@@ -75,21 +119,83 @@
         <a href="projects.html" class="active">Projects</a>
         <a href="contact.html">Contact Me</a>
     </nav>
+
     <section class="projects container">
         <h2>Projects - Newest to Oldest</h2>
         <ul>
             <li>
-                <strong>Project 1:</strong> Description of your first project.
+                <strong>FireGuard Pro:</strong> <a href="https://github.com/KyleSeaford/FDS" target="_blank">FireGuard Pro</a>, formerly known as Forest Defense System (FDS), is a system I've designed to detect wildfires in remote and forested areas. This system utilizes a network of sensors connected to Raspberry Pis to monitor a wide range of environmental conditions, enabling early detection of potential fire hazards. By leveraging cutting-edge technology and innovative design, FireGuard Pro aims to enhance fire prevention efforts and protect vulnerable ecosystems.
+                <button onclick="openModal('modal6')">View image</button>
+
+                <div id="modal6" class="modal">
+                    <span class="close" onclick="closeModal('modal6')">&times;</span>
+                    <img class="modal-content" src="projects/fds.PNG" alt="image">
+                </div>
             </li>
+
             <li>
-                <strong>Project 2:</strong> Description of your second project.
+                <strong>BoxNest:</strong> <a href="https://github.com/KyleSeaford/BoxNest" target="_blank">BoxNest</a> is a cutting-edge storage management solution designed to streamline the organization, tracking, and retrieval of stored items. With its intuitive interface and robust features, BoxNest ensures that users can effortlessly manage their stored boxes, enhancing efficiency and minimizing the hassle associated with storage management. By leveraging the power of technology, BoxNest revolutionizes the way we store and access our belongings.
+                <button onclick="openModal('modal5')">View image</button>
+
+                <div id="modal5" class="modal">
+                    <span class="close" onclick="closeModal('modal5')">&times;</span>
+                    <img class="modal-content" src="projects/box.PNG" alt="image">
+                </div>
             </li>
+
             <li>
-                <strong>Project 3:</strong> Description of your third project.
+                <strong>IBM SERVERS:</strong> I had the opportunity to acquire a collection of 12 IBM servers, consisting of 7 M3 models, 2 M2 models, and 1 M4 model. In addition to these, I also acquired 6 HP ProLiant DL160 Generation 5 servers. Recognizing the potential value in these hardware assets, I embarked on a meticulous process to restore and refurbish them to their optimal working condition. Through my efforts, I have successfully resolved any technical issues and ensured that these servers are fully operational. Some of the servers are now used for hosting some of my websites and running programs like <a href="https://ollama.com/" target="_blank">ollama</a>, a locally hosted ai.
+                <button onclick="openModal('modal4')">View image</button>
+
+                <div id="modal4" class="modal">
+                    <span class="close" onclick="closeModal('modal4')">&times;</span>
+                    <img class="modal-content" src="projects/server.png" alt="image">
+                </div>
+            </li>
+
+            <li>
+                <strong>Cryptocurrency:</strong> I mined XMR coins using Linux and Windows Monero miners. Learning to mine enabled me to understand how to install Linux and use Putty to control the computer remotely using SSH. I also explored the possibility of using old mobile phones for mining; however, the Android power-saving functionality prevented mining on the phone. To overcome this obstacle, I removed the phone's operating system and installed Linux. This experience not only expanded my knowledge of cryptocurrency but also deepened my understanding of Linux and its applications.
+                <button onclick="openModal('modal3')">View image</button>
+
+                <div id="modal3" class="modal">
+                    <span class="close" onclick="closeModal('modal3')">&times;</span>
+                    <img class="modal-content" src="projects/xme.jpg" alt="image">
+                </div>
+            </li>
+
+            <li>
+                <strong>Arduino battle bots:</strong> I used Arduino Nanos to create two Bluetooth-controlled robots: Ram Bot and Wacker. Ram Bot showcased versatility, tackling various tasks and obstacle courses. Wacker, on the other hand, specialized in precise movements. These projects not only displayed my technical skills but also my passion for robotics and innovation, highlighting the creative potential of technology. 
+                <button onclick="openModal('modal2')">View image</button>
+
+                <div id="modal2" class="modal">
+                    <span class="close" onclick="closeModal('modal2')">&times;</span>
+                    <img class="modal-content" src="projects/bots.png" alt="image">
+                </div>
+            </li>
+
+            <li>
+                <strong>Pi-Wars:</strong> In 2017 and 2018, my family enthusiastically joined <a href="https://piwars.org/" target="_blank">Pi-Wars</a> at Cambridge University, a robotics competition where all robots were powered by Raspberry Pi controllers. This unique event featured non-combat challenges such as navigating mazes, precision line-following, and even robotic mini-golf. It was an invaluable experience that allowed us to showcase our technical skills, problem-solving abilities, and teamwork while exploring the exciting world of Raspberry Pi-powered robotics. This was the start of my journey into robotics and programming.
+                <button onclick="openModal('modal1')">View image</button>
+    
+                <div id="modal1" class="modal">
+                    <span class="close" onclick="closeModal('modal1')">&times;</span>
+                    <img class="modal-content" src="projects/pi.jpg" alt="image">
+                </div>
             </li>
         </ul>
     </section>
-    <footer>
+
+    <script>
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = "block";
+        }
+    
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = "none";
+        }
+    </script>
+
+    <br><footer>
         &copy; 2024 Kyle Seaford
     </footer>
 </body>

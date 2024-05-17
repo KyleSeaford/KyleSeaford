@@ -7,46 +7,109 @@
     <link rel="icon" type="image/x-icon" href="logo.png">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f7f7f7; /* Light gray */
+        color: #333;
         }
+
         header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
+        background-color: #3498db; /* Blue */
+        color: white;
+        padding: 10px 0;
+        text-align: center;
         }
+
         nav {
-            display: flex;
-            justify-content: center;
-            background-color: #333;
+        display: flex;
+        justify-content: center;
+        background-color: #2c3e50; /* Dark blue-gray */
         }
+
         nav a {
             color: white;
             padding: 14px 20px;
             text-decoration: none;
             text-align: center;
+            width: 5%;
         }
+
         nav a:hover {
-            background-color: #575757;
+        background-color: rgb(105, 104, 104); /* Dark blue-gray */
         }
+
         nav a.active {
-            background-color: #575757;
+        background-color: rgb(105, 104, 104); /* Dark blue-gray */
         }
+
         section {
-            padding: 10px;
+        padding: 20px 20px;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin: 20px;
+        border-radius: 8px;
         }
+
         .container {
-            max-width: 850px;
-            margin: auto;
+        max-width: 850px;
+        margin: 20px auto;
         }
+
+        .about, .education, .skills {
+        margin-bottom: 40px;
+        }
+
+        h2 {
+        color: #3498db; /* Blue */
+        }
+
+        ul {
+        list-style: none;
+        padding: 0;
+        }
+
+        ul li {
+        margin-bottom: 10px;
+        }
+
+        ul li ul {
+        margin-left: 20px;
+        }
+
+        ul li ul li {
+        margin-bottom: 5px;
+        }
+
+        .contact a {
+        color: #3498db; /* Blue */
+        text-decoration: none;
+        transition: color 0.3s;
+        }
+
+        .contact a:hover {
+        color: #2196f3; /* Dark blue */
+        }
+
+        .left-table {
+        float: left;
+        width: 40%;
+        margin-right: 10px;
+        }
+
+        .right-table {
+            float: right;
+            width: 40%;
+        }
+
+        .clear {
+            clear: both;
+        }
+
         footer {
             text-align: center;
             padding: 10px 0;
-            background-color: #4CAF50;
+            background-color: #2c3e50; /* Dark blue-gray */
             color: white;
             position: fixed;
             width: 100%;
@@ -66,50 +129,62 @@
         <a href="contact.html">Contact Me</a>
     </nav>
     <section class="container">
-        <h2>Kyle Seaford</h2>
+        <h2>Welcome</h2>
         <p>Hello! I'm Kyle Seaford. Welcome to my personal webpage where you can learn more about me, explore my projects, and find out how to get in touch with me.</p>
     </section>
 
     <section class="about container">
         <h2>About Me</h2>
-        <p>I'm an adaptable and enthusiastic individual with a sincere passion for computer technology 💻. I am a quick learner and I constantly stay updated on the latest trends, I often approach tasks with a strong sense of responsibility, This leads to my passion extending beyond my professional life, driving exploration and innovation in the dynamic field of computer technology. Aspiring to be a data scientist! 📊</p>
+        <p>I'm an adaptable and enthusiastic individual with a sincere passion for computer technology 💻. I am a quick learner and I constantly stay updated on the latest trends. I approach tasks with a strong sense of responsibility, which extends beyond my professional life, driving exploration and innovation in the dynamic field of computer technology. Aspiring to be a data scientist! 📊</p>
     </section>
 
     <section class="education container">
         <h2>Education</h2>
-        <p>Currently studying Digital Production Design at Macclesfield College, where I'm gaining practical experience in programming, web development, and digital marketing. Through the industry placement, I'm hope to acquire valuable insights and gain both technical and employability skills, setting the foundation for a successful career in the digital field.</p>
+        <p>I am currently studying Digital Production Design at Macclesfield College, where I'm gaining practical experience in programming, web development, and digital marketing. Through the industry placement, I'm gaining valuable insights and both technical and employability skills, setting the foundation for a successful career in the digital field.</p>
 
         <h3>Coursework and School Projects</h3>
         <ul>
-            <li>DigiStore
+            <li>
+                <strong>DigiStore:</strong> 
                 <ul>
-                    <li>As a small team we developed a website for a fictional online store using HTML, CSS, Python and JavaScript. learn more by visiting our <a href="https://github.com/Ecommerce-Tlevel">GitHub</a>  (Unfortunately its Currently Private)</li> 
+                    <li>As a small team we developed a website for a fictional online store using HTML, CSS, Python, and JavaScript. Learn more by visiting our <a href="https://github.com/Ecommerce-Tlevel">GitHub</a> (Unfortunately it's currently private).</li> 
                 </ul>
-            </li><br>
-            <li>Web Development
+            </li>
+            <li>
+                <strong>Web Development:</strong>
                 <ul>
-                    <li>I've developed a few webpages throughout my time at College, feel free to take a closer look at them <a href="websites.html">Here</a></li>
+                    <li>I've developed a few webpages throughout my time at College. Feel free to take a closer look at them <a href="websites.html">here</a>.</li>
                 </ul>
             </li>
         </ul>
     </section>
     
     <section class="skills container">
-        <h2>Skills</h2>
+        <h2>Skills and Talents</h2>
         <p>Here are some of the skills I've developed throughout my studies and personal projects:</p>
-        <ul>
-            <li>Python</li>
-            <li>R</li>
-            <li>MarkDown</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>SQL</li>
-
-            <li>Git</li>
-            <li>Linux</li>
-            <li>Microsoft Office</li>
-            <li>Adobe PhotoShop</li>
-        </ul>
+        <div class="skills-container">
+            <ul class="left-table">
+                <li><div><strong>Python</strong></div></li>
+                <li><div><strong>R</strong></div></li>
+                <li><div><strong>Markdown</strong></div></li>
+                <li><div><strong>HTML</strong></div></li>
+                <li><div><strong>CSS</strong></div></li>
+                <li><div><strong>SQL</strong></div></li>
+                <li><div><strong>Git</strong></div></li>
+                <li><div><strong>Linux</strong></div></li>
+            </ul>
+            <ul class="right-table">
+                <li><div><strong>Problem-solving</strong></div></li>
+                <li><div><strong>Teamwork</strong></div></li>
+                <li><div><strong>Time management</strong></div></li>
+                <li><div><strong>Hardware installation</strong></div></li>
+                <li><div><strong>Adaptability</strong></div></li>
+                <li><div><strong>Attention to detail</strong></div></li>
+                <li><div><strong>Organization</strong></div></li>
+                <li><div><strong>Self-motivation</strong></div></li>
+            </ul>
+            <div class="clear"></div>
+        </div>
     </section>
 
     <br><br><footer>
