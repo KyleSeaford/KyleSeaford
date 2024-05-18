@@ -10,11 +10,11 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
+            background-color: #f7f7f7;
             color: #333;
         }
         header {
-            background-color: #4CAF50;
+            background-color: #3498db;
             color: white;
             padding: 10px 0;
             text-align: center;
@@ -22,19 +22,20 @@
         nav {
             display: flex;
             justify-content: center;
-            background-color: #333;
+            background-color: #2c3e50;
         }
         nav a {
             color: white;
             padding: 14px 20px;
             text-decoration: none;
             text-align: center;
+            width: auto;
         }
         nav a:hover {
-            background-color: #575757;
+            background-color: rgb(105, 104, 104);
         }
         nav a.active {
-            background-color: #575757;
+            background-color: rgb(105, 104, 104);
         }
         section {
             padding: 20px;
@@ -48,20 +49,21 @@
             padding: 0;
         }
         .projects li {
-            background: #e2e2e2;
-            margin: 10px 0;
-            padding: 10px;
+            background: #fff;
+            margin: 10px 10px;
+            padding: 20px;
             border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         .projects button {
-            background-color: #4CAF50;
+            background-color: #3498db;
             color: white;
             padding: 2px 10px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
             float: right; /* Add this line */
-            margin-top: 5px;;
+            margin-top: 8px;;
         }
         .modal {
             display: none;
@@ -100,11 +102,18 @@
         footer {
             text-align: center;
             padding: 10px 0;
-            background-color: #4CAF50;
+            background-color: #2c3e50;
             color: white;
             position: fixed;
             width: 100%;
             bottom: 0;
+        }
+        strong {
+            color: #3498db; /* Blue */
+        }
+        h2 {
+            color: #3498db; /* Blue */
+            text-align: center;
         }
     </style>
 </head>
@@ -124,7 +133,7 @@
         <h2>Projects - Newest to Oldest</h2>
         <ul>
             <li>
-                <strong>FireGuard Pro:</strong> <a href="https://github.com/KyleSeaford/FDS" target="_blank">FireGuard Pro</a>, formerly known as Forest Defense System (FDS), is a system I've designed to detect wildfires in remote and forested areas. This system utilizes a network of sensors connected to Raspberry Pis to monitor a wide range of environmental conditions, enabling early detection of potential fire hazards. By leveraging cutting-edge technology and innovative design, FireGuard Pro aims to enhance fire prevention efforts and protect vulnerable ecosystems.
+                <strong>FireGuard Pro:</strong> <a href="https://github.com/KyleSeaford/FDS" target="_blank">FireGuard Pro</a>, formerly known as Forest Defense System (FDS), is a system I've designed to detect wildfires in remote and forested areas. This system uses a network of sensors connected to Raspberry Pis to monitor a wide range of environmental conditions, enabling early detection of potential fire hazards. By leveraging cutting-edge technology and innovative design, FireGuard Pro aims to enhance fire prevention and protect vulnerable ecosystems.
                 <button onclick="openModal('modal6')">View image</button>
 
                 <div id="modal6" class="modal">
@@ -174,7 +183,7 @@
             </li>
 
             <li>
-                <strong>Pi-Wars:</strong> In 2017 and 2018, my family enthusiastically joined <a href="https://piwars.org/" target="_blank">Pi-Wars</a> at Cambridge University, a robotics competition where all robots were powered by Raspberry Pi controllers. This unique event featured non-combat challenges such as navigating mazes, precision line-following, and even robotic mini-golf. It was an invaluable experience that allowed us to showcase our technical skills, problem-solving abilities, and teamwork while exploring the exciting world of Raspberry Pi-powered robotics. This was the start of my journey into robotics and programming.
+                <strong>Pi-Wars:</strong> In 2017 and 2018, my family enthusiastically joined <a href="https://piwars.org/" target="_blank">Pi-Wars</a> at Cambridge University, a robotics competition where all robots were powered by Raspberry Pis. This unique event featured non-combat challenges such as navigating mazes, precision line-following, and even robotic mini-golf. It was an invaluable experience that allowed us to showcase our technical skills, problem-solving abilities, and teamwork while exploring the exciting world of Raspberry Pi-powered robotics. This was the start of my journey into robotics and programming.
                 <button onclick="openModal('modal1')">View image</button>
     
                 <div id="modal1" class="modal">
