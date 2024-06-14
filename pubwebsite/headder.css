@@ -1,0 +1,35 @@
+header[role="banner"] #logo-main {
+    display: block;
+}
+
+#navbar-primary.navbar-default {
+    font-family: 'Helvetica', sans-serif;
+    color: white;
+    background: #b9a1a1;
+    border: solid #b9a1a1;
+}
+
+#navbar-primary.navbar-default .navbar-nav {
+    width: 100%;
+    text-align: center;
+    font-size: x-large;
+}
+
+#navbar-primary.navbar-default .navbar-nav>li {
+    display: inline-block;
+    float: none;
+}
+
+#navbar-primary.navbar-default .navbar-nav>li>a {
+    padding-left: 30px;
+    padding-right: 30px;
+    color: white; 
+}
+
+#navbar-primary.navbar-default .navbar-nav>li>a:hover {
+    color: lightgray;
+}
+
+#navbar-primary.navbar-default .navbar-nav>li>a.active {
+    color: lightgray;
+}
