@@ -1,0 +1,53 @@
+/* styles.css */
+
+/* Define color variables for easy maintenance */
+:root {
+    --deep-gold:#FFD700;
+    --pink: #b62779; 
+    --dark-gray:#263437;
+    --gray:#1b4b4b;  
+    --dark-dark-gray: #2c2d32;
+    --cream: #f5f5f5;
+  }
+  
+  /* General Styles */
+  body {
+    background-color: var(--cream);
+    color: var(--charcoal-gray);
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: var(--dark-dark-gray) !important;
+  }
+  
+  .navbar-brand {
+    color: var(--deep-gold) !important;
+  }
+
+  .nav-link {
+    color: var(--cream) !important;
+  }
+  
+  .nav-link:hover {
+    color: var(--deep-gold) !important;
+  }
+  
+  /* Header */
+  .header {
+    background-color: var(--dark-gray);
+    color: var(--cream);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .header h1, .header h2, .header h3 {
+    margin: 0;
+  }
+  
+  /* Content */
+  .content {
+    background-color: var(--gray);
+    padding: 20px;
+  }
+  
