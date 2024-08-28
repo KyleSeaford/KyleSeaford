@@ -5,6 +5,12 @@
     box-sizing: border-box;
 }
 
+.barlow-condensed-semibold {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+  
 body {
     font-family: 'Arial', sans-serif;
     color: #ccc;
@@ -24,19 +30,24 @@ header {
     background-color: #1e1e1e;
     padding: 20px 0;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header .logo img {
-    width: 120px;
-    vertical-align: middle;
+    justify-content: end;
+    position: fixed; /* Make header sticky */
+    top: 0;
+    width: 100%;
+    z-index: 10; /* Ensure header stays on top */
 }
 
 header nav ul {
     list-style: none;
-    display: flex;
+    display: inline-flex;
     gap: 20px;
+    text-align: right;
+}
+
+header .logo img {
+    width: 120px;
+    /*vertical-align: middle;*/
+    margin-right: 20px; /* Add a gap between the logo and nav buttons */
 }
 
 header nav ul li a {
@@ -55,12 +66,23 @@ header nav ul li a:hover {
     background: linear-gradient(135deg, #1e1e1e 60%, #8b19f1);
     color: #fff;
     padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    width: 100%;
+    height: 100vh;
+    margin-top: 0px; /* Account for sticky header height */
+}
+
+.hero-content {
+    max-width: 800px;
 }
 
 #hero h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin-bottom: 20px;
+    
 }
 
 #hero p {
@@ -97,25 +119,43 @@ header nav ul li a:hover {
 }
 
 #services .service-box {
-    margin: 20px 0;
-    background-color: #252525;
-    padding: 20px;
-    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
 }
 
-#services .service-box h3 {
+#services .service-box.reverse {
+    flex-direction: row-reverse;
+}
+
+#services .service-text {
+    flex: 1;
+    padding: 20px;
+}
+
+#services .service-text h3 {
     color: #fff;
     margin-bottom: 10px;
 }
 
-#services .service-box p {
+#services .service-text p {
     color: #ccc;
+}
+
+#services .service-img {
+    flex: 1;
+    padding: 20px;
+}
+
+#services .service-img img {
+    width: 100%;
+    border-radius: 10px;
 }
 
 /* About Us Section */
 #about {
     padding: 60px 0;
-    background: #121212;
+    background: #1c1c1c;
     text-align: center;
 }
 
@@ -131,7 +171,7 @@ header nav ul li a:hover {
 /* Portfolio Section */
 #portfolio {
     padding: 60px 0;
-    background-color: #1c1c1c;
+    background-color: #121212;
     text-align: center;
 }
 
@@ -178,22 +218,52 @@ header nav ul li a:hover {
     border: 1px solid #333;
     border-radius: 10px;
     background: #252525;
-    color: #ccc;
+    color: #ccc; /* Set input text color */
 }
 
-#contact form button.btn-primary {
+#contact form button {
+    display: inline-block;
     padding: 12px 30px;
     background: #8b19f1;
     color: #fff;
-    border: none;
+    text-decoration: none;
+    font-weight: bold;
     border-radius: 25px;
-    cursor: pointer;
     transition: background 0.3s ease;
+    border: none; /* Remove default button border */
+    cursor: pointer;
 }
 
-#contact form button.btn-primary:hover {
+#contact form button:hover {
     background: #6611c5;
 }
 
 /* Footer */
 footer {
+    background-color: #1e1e1e;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    color: #ccc;
+}
+
+/* Social Icons (Add your own styles for icons) */
+.social-icons {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 5px;
+    color: #ccc;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #8b19f1;
+}
