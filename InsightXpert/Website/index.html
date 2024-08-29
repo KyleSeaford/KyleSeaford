@@ -122,16 +122,31 @@
     <section id="contact">
         <div class="container">
             <h2>Contact Us</h2>
-            <form>
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" required></textarea>
+            <p>Have a question or want to discuss a project? Fill out the form below, and we'll get back to you as soon as possible.</p>
+            <form id="contact-form">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" name="phone" placeholder="Your Phone (Optional)">
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                </div>
                 <button type="submit" class="btn-primary">Send Message</button>
+                <div id="form-feedback" class="hidden">Thank you! Your message has been sent.</div>
             </form>
-            <p>Email: info@insightxpert.com | Phone: 07842 313598</p>
-            <P>Address: Macclesfield, Cheshire East, UK</P>
+            <div class="contact-details">
+                <p>Email: <a href="mailto:info@insightxpert.com">info@insightxpert.com</a></p>
+                <p>Phone: <a href="tel:+447842313598">07842 313598</a></p>
+                <p>Address: Macclesfield, Cheshire East, UK</p>
+            </div>
         </div>
     </section>
+
 
     <!-- Footer -->
     <footer>

@@ -248,7 +248,7 @@ header nav ul li a:hover {
 
 /* Contact Section */
 #contact {
-    padding: 60px 60px 25px 60px;
+    padding: 60px 20px 25px 20px;
     background-color: #121212;
     text-align: center;
 }
@@ -256,6 +256,22 @@ header nav ul li a:hover {
 #contact h2 {
     color: #8b19f1;
     margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+#contact p {
+    color: #ccc;
+    margin-bottom: 0px;
+    font-size: 1.2rem;
+}
+
+#contact form {
+    max-width: 1000px;
+    margin: 0 auto 15px auto;
+}
+
+#contact .form-group {
+    margin-bottom: 10px;
 }
 
 #contact form input, 
@@ -266,7 +282,13 @@ header nav ul li a:hover {
     border: 1px solid #333;
     border-radius: 10px;
     background: #252525;
-    color: #ccc; /* Set input text color */
+    color: #ccc;
+    font-size: 1rem;
+}
+
+#contact form input::placeholder, 
+#contact form textarea::placeholder {
+    color: #888;
 }
 
 #contact form button {
@@ -274,18 +296,48 @@ header nav ul li a:hover {
     padding: 12px 30px;
     background: #8b19f1;
     color: #fff;
-    text-decoration: none;
+    font-size: 1.2rem;
     font-weight: bold;
     border-radius: 25px;
-    margin-bottom: 15px;
     transition: background 0.3s ease;
-    border: none; /* Remove default button border */
+    border: none;
     cursor: pointer;
 }
 
 #contact form button:hover {
     background: #6611c5;
 }
+
+#form-feedback {
+    margin-top: 20px;
+    color: #66ff66;
+    font-weight: bold;
+    display: none;
+}
+
+#form-feedback.hidden {
+    display: none;
+}
+
+.contact-details {
+    margin-top: 5px;
+}
+
+.contact-details p {
+    color: #ccc;
+    font-size: 1rem;
+}
+
+.contact-details a {
+    color: #8b19f1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-details a:hover {
+    color: #6611c5;
+}
+
 
 /* Footer */
 footer {
