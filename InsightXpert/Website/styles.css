@@ -155,6 +155,7 @@ header nav ul li a:hover {
 #services .service-img img {
     width: 100%;
     border-radius: 10px;
+    margin: 20px;
 }
 
 /* About Us Section */
