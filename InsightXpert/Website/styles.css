@@ -167,15 +167,52 @@ header nav ul li a:hover {
 #about {
     padding: 60px 0;
     background: #1c1c1c;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left; /* Align text to the left */
 }
-#about h2 {
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.about-img {
+    flex: 1;
+    padding: 20px;
+}
+
+.about-img img {
+    width: 100%;
+    border-radius: 10px;
+    height: auto; /* Adjust the height proportionally */
+}
+
+.about-text {
+    flex: 1;
+    padding: 20px;
+    color: #ccc;
+}
+
+.about-text h2 {
     color: #8b19f1;
     margin-bottom: 20px;
 }
 
-#about p {
-    color: #ccc;
+.about-text ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.about-text ul li {
+    margin-bottom: 10px;
+}
+
+.about-text ul li strong {
+    color: #fff;
 }
 
 /* Portfolio Section */
@@ -200,8 +237,8 @@ header nav ul li a:hover {
 }
 
 #portfolio .portfolio-item img {
-    width: 30vh;
-    height: 30vh;
+    width: 35vh;
+    height: 35vh;
     border-radius: 10px;
 }
 
