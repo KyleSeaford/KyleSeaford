@@ -42,7 +42,8 @@ header .container {
 }
 
 header .logo img {
-    width: 120px;
+    margin-bottom: -10px;
+    width: 130px;
 }
 
 header nav {
@@ -347,6 +348,13 @@ footer {
 
 footer p {
     color: #ccc;
+    float: left;
+}
+
+footer img {
+    width: 120px;
+    margin-bottom: -10px;
+    float: right;
 }
 
 /* Mobile Styles */
@@ -405,6 +413,12 @@ footer p {
     header nav ul li {
         flex: 0; /* Allow items to flex and wrap */
         text-align: center; /* Center nav items */
+    }
+
+    footer img {
+        width: 8cap;
+        margin-bottom: -10px;
+        float: right;
     }
 }
 
