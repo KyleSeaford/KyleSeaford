@@ -338,7 +338,6 @@ header nav ul li a:hover {
     color: #6611c5;
 }
 
-
 /* Footer */
 footer {
     background-color: #1e1e1e;
@@ -349,3 +348,63 @@ footer {
 footer p {
     color: #ccc;
 }
+
+/* Mobile Styles */
+@media only screen and (max-width: 768px) {
+
+    /* Hide the logo in the navbar */
+    header .logo img {
+        display: none;
+    }
+
+    /* Hide the images in the Services section */
+    #services .service-img img {
+        display: none;
+    }
+
+    /* Hide the image in the About Us section */
+    .about-img img {
+        display: none;
+    }
+
+    /* Ensure text in Services section uses the full width */
+    #services .service-box {
+        flex-direction: column; /* Stack items vertically */
+        text-align: center; /* Center the text */
+        width: 100%; /* Make sure the container takes full width */
+    }
+
+    #services .service-text {
+        width: 100%; /* Ensure text uses full width */
+        padding: 0 15px; /* Add padding to sides for some space */
+    }
+
+    /* Reverse the order of the items in the Services section */
+    #services .service-box.reverse {
+        flex-direction: column-reverse; /* Stack items vertically in reverse order */
+        margin-bottom: 100px;
+    }
+
+    /* Ensure text in About Us section uses the full width */
+    .about-container {
+        flex-direction: column; /* Stack items vertically */
+        text-align: center; /* Center the text */
+        width: 100%; /* Ensure container takes full width */
+    }
+
+    .about-text {
+        width: 100%; /* Ensure text uses full width */
+        padding: 0 15px; /* Add padding to sides for some space */
+    }
+
+    /* Adjust navbar to prevent items from falling off */
+    header nav ul {
+        justify-content: space-evenly; /* Distribute space evenly */
+    }
+
+    header nav ul li {
+        flex: 0; /* Allow items to flex and wrap */
+        text-align: center; /* Center nav items */
+    }
+}
+
