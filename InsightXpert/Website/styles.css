@@ -156,6 +156,11 @@ header nav ul li a:hover {
     padding: 20px;
     height: 400px;
     display: flex;
+    transition: transform 0.3s ease;
+}
+
+#services .service-img:hover {
+    transform: scale(1.05);
 }
 
 #services .service-img img {
@@ -190,6 +195,11 @@ header nav ul li a:hover {
     width: 100%;
     border-radius: 10px;
     height: auto; /* Adjust the height proportionally */
+    transition: transform 0.3s ease;
+}
+
+.about-img img:hover {
+    transform: scale(1.05);
 }
 
 .about-text {
@@ -307,6 +317,7 @@ header nav ul li a:hover {
 
 #contact form button:hover {
     background: #6611c5;
+    transform: scale(1.05);
 }
 
 #form-feedback {
@@ -322,6 +333,7 @@ header nav ul li a:hover {
 
 .contact-details {
     margin-top: 5px;
+    
 }
 
 .contact-details p {
@@ -416,7 +428,7 @@ footer img {
     }
 
     footer img {
-        width: 8cap;
+        width: 7cap;
         margin-bottom: -10px;
         float: right;
     }
