@@ -419,9 +419,17 @@ footer img {
 
     /* Adjust navbar to prevent items from falling off */
     header nav ul {
-        justify-content: space-evenly; /* Distribute space evenly */
+        justify-content: center; /* Distribute space evenly */
+        text-align: center; /* Center nav items */
     }
 
+    header .container {
+        display: flex;
+        justify-content: space-between; /* Space between logo and nav */
+        align-items: center; /* Center items vertically */
+        margin: 0;
+    }
+    
     header nav ul li {
         flex: 0; /* Allow items to flex and wrap */
         text-align: center; /* Center nav items */
