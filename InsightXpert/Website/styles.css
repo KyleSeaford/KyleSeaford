@@ -432,4 +432,8 @@ footer img {
         margin-bottom: -10px;
         float: right;
     }
+
+    footer p {
+        font-size: smaller;
+    }
 }
