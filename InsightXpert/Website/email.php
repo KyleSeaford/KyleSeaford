@@ -35,9 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             header("Location: index.html");            
             exit();
         } else {
-            // Check for the last error
-            $errorMessage = error_get_last()['message'];
-            echo "Oops! Something went wrong. Please try again later. Error: " . $errorMessage;
+            header("Location: index.html#contact");
         }
     }
 }
