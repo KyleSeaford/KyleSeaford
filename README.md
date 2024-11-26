@@ -13,4 +13,4 @@ Welcome to my GitHub profile! I am an adaptable and enthusiastic individual with
 - [LinkedIn](https://www.linkedin.com/in/kyle-seaford/)
 - [Personal Website/Blog](http://kyle-seaford.co.uk/)
 
-Thanks for visiting my profile! I'm excited to connect with fellow developers and contribute to the community. Happy coding! 👩‍💻
+Thanks for visiting my profile and remember embrace challenges, learn continuously, and enjoy the ride!
