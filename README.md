@@ -2,7 +2,7 @@
 
 Welcome to my GitHub profile! I am an adaptable and enthusiastic individual with a sincere passion for computer technology. 💻
 
-🔭 I’m currently working on growing and improveing [InsightXpert](https://insightxpert.co.uk/)
+🔭 I’m currently working on growing and improving [InsightXpert](https://insightxpert.co.uk/)
 
 > Feel free to explore my repositories and see what I've been working on. I'm always open to new ideas and collaborations!
 
