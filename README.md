@@ -1,7 +1,7 @@
 Hi ![](https://user-images.githubusercontent.com/18350557/176309783-0785949b-9127-417c-8b55-ab5a4333674e.gif)My name is Kyle Seaford
 ====================================================================================================================================
 
-Managing Partner @ InsightXpert
+Tech Innovator & Managing Partner @ InsightXpert
 -------------------------------
 
 I am an adaptable and enthusiastic individual with a sincere passion for computer technology 💻. I am a quick learner, constantly staying updated on the latest trends, and I approach tasks with a strong sense of responsibility. My passion extends beyond my professional life, driving exploration and innovation in the dynamic field of computer technology.
