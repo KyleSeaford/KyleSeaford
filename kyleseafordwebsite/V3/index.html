@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kyle Seaford - Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {}
+            }
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .btn {
+            padding: 0.75rem 1.5rem;
+            border-radius: 9999px;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+        
+        .btn-primary {
+            background-color: #ae47ff;
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background-color: #9333ea;
+        }
+
+        .website-card:hover img {
+            transform: scale(1.1);
+            transition: transform 0.3s ease;
+        }
+
+        .website-card img {
+            transition: transform 0.3s ease;
+        }
+    </style>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="min-h-screen bg-gray-50">
+    <!-- Hero Section -->
+    <div class="relative h-screen flex items-center justify-center bg-gradient-to-br from-[#ae47ff] to-purple-800">
+        <div class="absolute inset-0 bg-black/20"></div>
+        <div class="relative z-10 text-center text-white px-4">
+            <h1 class="text-5xl md:text-7xl font-bold mb-4">Kyle Seaford</h1>
+            <p class="text-xl md:text-2xl mb-8">Managing Partner of InsightXpert & DPDD Student</p>
+            <div class="flex justify-center gap-6">
+                <a href="https://github.com/KyleSeaford" class="hover:text-[#ae47ff] transition-colors">
+                    <i data-lucide="github" class="w-6 h-6"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/kyle-seaford/" class="hover:text-[#ae47ff] transition-colors">
+                    <i data-lucide="linkedin" class="w-6 h-6"></i>
+                </a>
+                <a href="contact@kyle-seaford.co.uk" class="hover:text-[#ae47ff] transition-colors">
+                    <i data-lucide="mail" class="w-6 h-6"></i>
+                </a>
+            </div>
+        </div>
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+            <a href="#website"><i data-lucide="mountain" class="w-8 h-8 text-white"></i></a>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section class="py-20 px-4 max-w-6xl mx-auto">
+        <h2 class="text-4xl font-bold text-center mb-12">About Me</h2>
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <img src="projects/bots.png"
+                    alt="Coding workspace"
+                    class="rounded-lg shadow-xl">
+            </div>
+            <div>
+                <p class="text-lg leading-relaxed text-gray-700 mb-6">
+                    I'm an adaptable and enthusiastic individual with a sincere passion for computer technology. 
+                    I'm a quick learner who actively keeps up with the latest trends, tackling tasks responsibly 
+                    and driving exploration and innovation.
+                </p>
+                <p class="text-lg leading-relaxed text-gray-700">
+                    My journey has led me through hands-on projects that have broadened my perspective on digital production, 
+                    entrepreneurship, and the potential of technology to transform industries. I thrive on collaboration 
+                    and creative problem-solving, always eager to learn new techniques and test cutting-edge tools.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="py-20 px-4 bg-gray-100">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12">Skills & Education</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="space-y-8">
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <div class="flex items-center mb-6">
+                            <i data-lucide="code" class="w-6 h-6 text-[#ae47ff] mr-3"></i>
+                            <h3 class="text-2xl font-semibold">Technical Skills</h3>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="flex items-center bg-gray-50 p-3 rounded">
+                                <span class="text-gray-800">Python</span>
+                            </div>
+                            <div class="flex items-center bg-gray-50 p-3 rounded">
+                                <span class="text-gray-800">JavaScript</span>
+                            </div>
+                            <div class="flex items-center bg-gray-50 p-3 rounded">
+                                <span class="text-gray-800">TypeScript</span>
+                            </div>
+                            <div class="flex items-center bg-gray-50 p-3 rounded">
+                                <span class="text-gray-800">HTML/CSS</span>
+                            </div>
+                            <div class="flex items-center bg-gray-50 p-3 rounded">
+                                <span class="text-gray-800">R</span>
+                            </div>
+                            <div class="flex items-center bg-gray-50 p-3 rounded">
+                                <span class="text-gray-800">SQL</span>
+                            </div>
+                            <div class="flex items-center bg-gray-50 p-3 rounded">
+                                <span class="text-gray-800">Linux</span>
+                            </div>
+                            <div class="flex items-center bg-gray-50 p-3 rounded">
+                                <span class="text-gray-800">Git</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <div class="flex items-center mb-6">
+                            <i data-lucide="cpu" class="w-6 h-6 text-[#ae47ff] mr-3"></i>
+                            <h3 class="text-2xl font-semibold">Soft Skills</h3>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="flex items-center bg-gray-50 p-3 rounded">
+                                <span class="text-gray-800">Problem-Solving</span>
+                            </div>
+                            <div class="flex items-center bg-gray-50 p-3 rounded">
+                                <span class="text-gray-800">Teamwork</span>
+                            </div>
+                            <div class="flex items-center bg-gray-50 p-3 rounded">
+                                <span class="text-gray-800">Time Management</span>
+                            </div>
+                            <div class="flex items-center bg-gray-50 p-3 rounded">
+                                <span class="text-gray-800">Hardware Installation</span>
+                            </div>
+                            <div class="flex items-center bg-gray-50 p-3 rounded">
+                                <span class="text-gray-800">Adaptability</span>
+                            </div>
+                            <div class="flex items-center bg-gray-50 p-3 rounded">
+                                <span class="text-gray-800">Attention to Detail</span>
+                            </div>
+                            <div class="flex items-center bg-gray-50 p-3 rounded">
+                                <span class="text-gray-800">Self-Motivation</span>
+                            </div>
+                            <div class="flex items-center bg-gray-50 p-3 rounded">
+                                <span class="text-gray-800">Communication</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <i data-lucide="book-open" class="w-6 h-6 text-[#ae47ff] mr-3"></i>
+                        <h3 class="text-2xl font-semibold">Education</h3>
+                    </div>
+                    <div class="space-y-8">
+                        <div class="border-l-4 border-[#ae47ff] pl-4">
+                            <h4 class="text-xl font-semibold mb-2">Digital Production Design</h4>
+                            <p class="text-gray-600 mb-2">Macclesfield College</p>
+                            <p class="text-gray-700">
+                                Gaining practical experience in programming, web development, and digital marketing. 
+                                Through industry placement, acquiring valuable insights and both technical and employability skills.
+                            </p>
+                        </div>
+                        <div class="border-l-4 border-[#ae47ff] pl-4">
+                            <h4 class="text-xl font-semibold mb-2">GCSEs</h4>
+                            <p class="text-gray-600 mb-2">Tytherington School</p>
+                            <p class="text-gray-700">
+                                Achieved excellent results in: Computer Science, Business Studies, Design and Technology, 
+                                Creative iMedia, Combined Science, Mathematics, English Language, English Literature
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex items-center mt-6 mb-6">
+                        <i data-lucide="binary" class="w-6 h-6 text-[#ae47ff] mr-3"></i>
+                        <h3 class="text-2xl font-semibold">Technology's Used</h3>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="flex items-center bg-gray-50 p-3 rounded">
+                            <span class="text-gray-800">Django</span>
+                        </div>
+                        <div class="flex items-center bg-gray-50 p-3 rounded">
+                            <span class="text-gray-800">Flask</span>
+                        </div>
+                        <div class="flex items-center bg-gray-50 p-3 rounded">
+                            <span class="text-gray-800">React</span>
+                        </div>
+                        <div class="flex items-center bg-gray-50 p-3 rounded">
+                            <span class="text-gray-800">React Native</span>
+                        </div>
+                        <div class="flex items-center bg-gray-50 p-3 rounded">
+                            <span class="text-gray-800">Vite</span>
+                        </div>
+                        <div class="flex items-center bg-gray-50 p-3 rounded">
+                            <span class="text-gray-800">Tailwind CSS</span>
+                        </div>
+                        <div class="flex items-center bg-gray-50 p-3 rounded">
+                            <span class="text-gray-800">BootStrap</span>
+                        </div>
+                        <div class="flex items-center bg-gray-50 p-3 rounded">
+                            <span class="text-gray-800">WordPress (Elementor)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Websites Section -->
+    <section id="website" class="py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12">Websites</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- LocalLinkk v2 -->
+                <div class="website-card bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="websites/ll2.png" 
+                            alt="LocalLinkk V2"
+                            class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <h3 class="absolute bottom-4 left-4 text-white text-xl font-semibold">LocalLinkk V2</h3>
+                        <a href="https://locallinkk.com/" target="_blank" class="absolute top-4 right-4 bg-white text-purple-700 px-3 py-1 rounded-full text-sm font-medium hover:bg-purple-100 transition-colors">View Site</a>
+
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600">LocalLinkk is an App designed to bridge the gap between local businesses and residents, helping them connect and thrive, this was the landing page.
+                        </p>
+                    </div>
+                </div>
+
+
+                <!-- ShieldSenseAI -->
+                <div class="website-card bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="websites/ssai.png" 
+                            alt="ShieldSenseAI"
+                            class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <h3 class="absolute bottom-4 left-4 text-white text-xl font-semibold">ShieldSenseAI</h3>
+                        <a href="https://shieldsense.insightxpert.co.uk/" target="_blank" class="absolute top-4 right-4 bg-white text-purple-700 px-3 py-1 rounded-full text-sm font-medium hover:bg-purple-100 transition-colors">View Site</a>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600">ShieldSenseAI is an advanced AI-powered communication tool that automatically filters, detects and redacts sensitive information in real-time.
+                    </div>
+                </div>
+
+                <!-- MetaBoost Admin -->
+                <div class="website-card bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="websites/mb.png" 
+                            alt="MetaBoost Admin"
+                            class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <h3 class="absolute bottom-4 left-4 text-white text-xl font-semibold">MetaBoost Admin</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600">MetaBoost Admin is the admin panel for MetaBoost, this is where admins can manage user accounts and configure system settings.</p>
+                    </div>
+                </div>
+
+                <!-- MetaBoost -->
+                <div class="website-card bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="websites/metaboost.png" 
+                            alt="MetaBoost"
+                            class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <h3 class="absolute bottom-4 left-4 text-white text-xl font-semibold">MetaBoost</h3>
+                        <a href="https://metaboost.dev/" target="_blank" class="absolute top-4 right-4 bg-white text-purple-700 px-3 py-1 rounded-full text-sm font-medium hover:bg-purple-100 transition-colors">View Site</a>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600">Analyses Code, WooCommerce Stores, Shopify Stores and Images to generate SEO meta tags and alt tags to enhance search engine rankings.</p>
+                    </div>
+                </div>
+
+                <!-- Xpert AI -->
+                <div class="website-card bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="websites/xai.png" 
+                            alt="Xpert AI"
+                            class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <h3 class="absolute bottom-4 left-4 text-white text-xl font-semibold">Xpert AI</h3>
+                        <a href="https://xpertai.insightxpert.co.uk/" target="_blank" class="absolute top-4 right-4 bg-white text-purple-700 px-3 py-1 rounded-full text-sm font-medium hover:bg-purple-100 transition-colors">View Site</a>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600">I created Xpert Ai to showcase the AI and Machine Learning services offered by InsightXpert. The website is designed to inform visitors about the benefits of AI.</p>
+                    </div>
+                </div>
+
+                <!-- InsightXpert -->
+                <div class="website-card bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="websites/ix.png" 
+                            alt="InsightXpert"
+                            class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <h3 class="absolute bottom-4 left-4 text-white text-xl font-semibold">InsightXpert</h3>
+                        <a href="https://insightxpert.co.uk/" target="_blank" class="absolute top-4 right-4 bg-white text-purple-700 px-3 py-1 rounded-full text-sm font-medium hover:bg-purple-100 transition-colors">View Site</a>
+
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600">As the managing partner of InsightXpert, I was responsible for
+                            developing the company's website. It showcases our services and team.</p>
+                    </div>
+                </div>
+
+                <!-- LocalLinkk -->
+                <div class="website-card bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="websites/ll.png" 
+                            alt="LocalLinkk"
+                            class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <h3 class="absolute bottom-4 left-4 text-white text-xl font-semibold">LocalLinkk V1</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600">LocalLinkk is an App designed to bridge the gap between local businesses and residents, helping them connect and thrive, this was the landing page.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Personal Website V2 -->
+                <div class="website-card bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="websites/v2.png" 
+                            alt="Personal Website V2"
+                            class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <h3 class="absolute bottom-4 left-4 text-white text-xl font-semibold">Personal Website V2</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600">This website highlighted my skills and
+                            projects in a responsive layout. Built with HTML, CSS, and
+                            JavaScript.</p>
+                    </div>
+                </div>
+
+                <!-- DigiStore -->
+                <div class="website-card bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="websites/ds.PNG" 
+                            alt="DigiStore"
+                            class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <h3 class="absolute bottom-4 left-4 text-white text-xl font-semibold">DigiStore</h3>
+                        <a href="http://digishop.kyle-seaford.co.uk/" target="_blank" class="absolute top-4 right-4 bg-white text-purple-700 px-3 py-1 rounded-full text-sm font-medium hover:bg-purple-100 transition-colors">View Site</a>
+
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600">A website for a fictional online store built in a small team using
+                            HTML, CSS, Python (Flask), and JavaScript.</p>
+                    </div>
+                </div>
+
+                <!-- FireGuard Pro -->
+                <div class="website-card bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="websites/fgp.png" 
+                            alt="FireGuard Pro"
+                            class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <h3 class="absolute bottom-4 left-4 text-white text-xl font-semibold">FireGuard Pro</h3>
+                        <a href="https://fgp.insightxpert.co.uk/" target="_blank" class="absolute top-4 right-4 bg-white text-purple-700 px-3 py-1 rounded-full text-sm font-medium hover:bg-purple-100 transition-colors">View Site</a>
+
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600">The website provides detailed information about the system, including the use of sensors connected to Raspberry Pis to track conditions.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Personal Website V1 -->
+                <div class="website-card bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="websites/cv.PNG" 
+                            alt="Personal Website V1"
+                            class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <h3 class="absolute bottom-4 left-4 text-white text-xl font-semibold">Personal Website V1</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600">I transformed my traditional CV into a dynamic website for a more
+                            engaging, informative experience. Eventually replaced by V2, which then got replaced with V3.</p>
+                    </div>
+                </div>
+
+                <!-- BoxNest -->
+                <div class="website-card bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="websites/box.png" 
+                            alt="BoxNest"
+                            class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <h3 class="absolute bottom-4 left-4 text-white text-xl font-semibold">BoxNest</h3>
+                        <a href="http://test.kyle-seaford.co.uk/index.html" target="_blank" class="absolute top-4 right-4 bg-white text-purple-700 px-3 py-1 rounded-full text-sm font-medium hover:bg-purple-100 transition-colors">View Site</a>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600">I created a website so that people could view and download one of my projects, BoxNest from the internet.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Southern San Andreas Super Autos -->
+                <div class="website-card bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="websites/ssa.PNG" 
+                            alt="Southern San Andreas Super Autos"
+                            class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <h3 class="absolute bottom-4 left-4 text-white text-xl font-semibold">Southern San Andreas Super Autos</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600">My second foray into web development, recreating the GTA5 in-game
+                            vehicle site. Though never public, it honed my HTML/CSS and design
+                            skills.</p>
+                    </div>
+                </div>
+
+                <!-- Dragon Fruit Games -->
+                <div class="website-card bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="websites/games.PNG" 
+                            alt="Dragon Fruit Games"
+                            class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <h3 class="absolute bottom-4 left-4 text-white text-xl font-semibold">Dragon Fruit Games</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600">My initial project in web development (Sep 2023). Chaotic layouts
+                            and amateurish aesthetics, but a priceless learning journey from
+                            coding novice to more seasoned developer.</p>
+                    </div>
+                </div>
+
+                <!-- Draw with Kyle -->
+                <div class="website-card bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="websites/draw.PNG" 
+                            alt="Draw with Kyle"
+                            class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <h3 class="absolute bottom-4 left-4 text-white text-xl font-semibold">Draw with Kyle</h3>
+                        <a href="http://draw.kyle-seaford.co.uk/index.html" target="_blank" class="absolute top-4 right-4 bg-white text-purple-700 px-3 py-1 rounded-full text-sm font-medium hover:bg-purple-100 transition-colors">View Site</a>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600">In 2012, I created my first WordPress site, featuring drawing
+                            showcases, local park reviews, and personal projects. It was a
+                            milestone in learning WordPress and creative expression.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="py-20 px-4 bg-gray-100">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12">Projects</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- MetaBoost -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                    <i data-lucide="globe" class="w-8 h-8 text-[#ae47ff] mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">MetaBoost</h3>
+                    <p class="text-gray-600">AI-powered SEO meta tags and Alt tags generator for HTML code, WooCommerce, and Shopify stores.</p>
+                </div>
+
+                <!-- InsightXpert -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                    <i data-lucide="briefcase" class="w-8 h-8 text-[#ae47ff] mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">InsightXpert</h3>
+                    <p class="text-gray-600">Technology solutions company delivering innovative business solutions.</p>
+                </div>
+
+                <!-- LocalLinkk -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                    <i data-lucide="building" class="w-8 h-8 text-[#ae47ff] mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">LocalLinkk</h3>
+                    <p class="text-gray-600">App connecting local businesses and residents for community engagement.</p>
+                </div>
+
+                <!-- FireGuard Pro -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                    <i data-lucide="mountain" class="w-8 h-8 text-[#ae47ff] mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">FireGuard Pro</h3>
+                    <p class="text-gray-600">IoT-based wildfire detection system using Raspberry Pi sensors.</p>
+                </div>
+
+                <!-- BoxNest -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                    <i data-lucide="box" class="w-8 h-8 text-[#ae47ff] mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">BoxNest</h3>
+                    <p class="text-gray-600">Advanced storage management solution for organization and tracking.</p>
+                </div>
+
+                <!-- IBM Servers -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                    <i data-lucide="server" class="w-8 h-8 text-[#ae47ff] mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">IBM Servers</h3>
+                    <p class="text-gray-600">Restoration of 12 IBM and 6 HP ProLiant servers for hosting and AI applications.</p>
+                </div>
+
+                <!-- Cryptocurrency Mining -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                    <i data-lucide="bitcoin" class="w-8 h-8 text-[#ae47ff] mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Cryptocurrency Mining</h3>
+                    <p class="text-gray-600">XMR mining operation using Linux and Windows Monero miners.</p>
+                </div>
+
+                <!-- Arduino Battle Bots -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                    <i data-lucide="notebook" class="w-8 h-8 text-[#ae47ff] mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Arduino Battle Bots</h3>
+                    <p class="text-gray-600">Bluetooth-controlled robots Ram Bot and Wacker for competitions.</p>
+                </div>
+
+                <!-- Pi-Wars -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                    <i data-lucide="gamepad" class="w-8 h-8 text-[#ae47ff] mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Pi-Wars</h3>
+                    <p class="text-gray-600">Cambridge robotics competition participation with non-combat challenges.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p>© 2025 Kyle Seaford. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
