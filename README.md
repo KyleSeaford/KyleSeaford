@@ -4,7 +4,7 @@ Hi ![](https://user-images.githubusercontent.com/18350557/176309783-0785949b-912
 Tech Innovator & Managing Partner @ InsightXpert
 -------------------------------
 
-I am an adaptable and enthusiastic individual with a sincere passion for computer technology 💻. I am a quick learner, constantly staying updated on the latest trends, and I approach tasks with a strong sense of responsibility. My passion extends beyond my professional life, driving exploration and innovation in the dynamic field of computer technology.
+I’m a hands-on, fast-learning developer with a real passion for tech. From building AI-powered SEO tools to deploying full-scale web platforms, I love solving problems that matter. I stay on the pulse of emerging trends, always looking to push boundaries and bring new ideas to life.
 
 * 🌍  I'm based in Macclesfield, England, United Kingdom
 * 🖥️  See my portfolio at [Kyle-Seaford.co.uk](http://kyle-seaford.co.uk/)
