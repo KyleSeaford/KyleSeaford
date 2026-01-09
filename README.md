@@ -7,7 +7,7 @@ Tech Innovator & Managing Partner @ InsightXpert
 I’m a hands-on, fast-learning developer with a real passion for tech. From building AI-powered SEO tools to deploying full-scale web platforms, I love solving problems that matter. I stay on the pulse of emerging trends, always looking to push boundaries and bring new ideas to life.
 
 * 🌍  I'm based in Macclesfield, England, United Kingdom
-* 🖥️  See my portfolio at [Kyle-Seaford.co.uk](http://kyle-seaford.co.uk/)
+* 🖥️  See my portfolio at [kyle-seaford.co.uk](http://kyle-seaford.co.uk/)
 * ✉️  You can contact me at [contact@kyle-seaford.co.uk](mailto:contact@kyle-seaford.co.uk)
 * 🚀  I'm currently working on [InsightXpert](http://insightxpert.co.uk/)
 * 🤝  I'm open to collaborating on Interesting Projects
