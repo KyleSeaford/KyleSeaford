@@ -3,5 +3,16 @@
         "Andreas",
         "sanandreas"
     ],
-    "liveServer.settings.port": 5501
+    "liveServer.settings.port": 5501,
+    "window.title": "Kyle Seaford Site - ${rootName}",
+    "workbench.colorCustomizations": {
+        "titleBar.activeBackground": "#9333ea",
+        "titleBar.activeForeground": "#ffffff",
+        "titleBar.inactiveBackground": "#9333ea",
+        "titleBar.inactiveForeground": "#cccccc",
+        "statusBar.background": "#9333ea",
+        "statusBar.foreground": "#ffffff",
+        "activityBar.border": "#9333ea",
+        "sideBar.border": "#9333ea"
+    }
 }
